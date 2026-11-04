@@ -1,0 +1,23 @@
+/* ---------- Hero ---------- */
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,68px);margin-bottom:22px}
+.hero p.lead{font-size:19px;color:var(--mist);max-width:30em;margin-bottom:32px}
+form.join{display:flex;gap:10px;max-width:460px;flex-wrap:wrap}
+form.join input{flex:1 1 220px;font:400 16px var(--body);padding:13px 16px;border-radius:10px;
+  border:1px solid var(--shell);background:var(--paper);color:var(--abyss)}
+form.join input::placeholder{color:var(--mist)}
+.note{font-size:14px;color:var(--mist);margin-top:12px;min-height:22px}
+.diagram{width:100%;height:auto;overflow:visible}
+.diagram .arm{fill:none;stroke:var(--kelp);stroke-width:3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0}
+.diagram .head{fill:var(--kelp)}
+.diagram .pill{fill:var(--paper);stroke:var(--shell)}
+.diagram text{font:500 15px var(--body);fill:var(--abyss)}
+.diagram .dot{fill:var(--ok)}
+@media(prefers-reduced-motion:no-preference){
+  .diagram .arm{stroke-dashoffset:1;animation:draw 1.3s cubic-bezier(.3,.6,.2,1) forwards;animation-delay:calc(var(--i)*.09s + .15s)}
+  .diagram .end{opacity:0;animation:fade .4s ease forwards;animation-delay:calc(var(--i)*.09s + 1.1s)}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes fade{to{opacity:1}}
+}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero{padding-top:48px}}

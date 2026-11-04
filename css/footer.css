@@ -1,0 +1,6 @@
+/* ---------- Footer ---------- */
+footer{padding:36px 0 44px;font-size:14px;color:var(--mist)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+footer .brand{font-size:18px;color:var(--abyss)}footer .brand svg{width:24px;height:24px}
+footer ul{display:flex;gap:22px;list-style:none;padding:0}
+footer a{text-decoration:none}footer a:hover{color:var(--abyss)}

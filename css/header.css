@@ -1,0 +1,16 @@
+/* ---------- Header ---------- */
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--tide) 88%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--shell);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 22px var(--display);letter-spacing:-.02em}
+.brand svg{width:30px;height:30px;color:var(--abyss)}
+nav{display:flex;align-items:center;gap:28px;font-size:15px}
+nav a{text-decoration:none;color:var(--mist)}
+nav a:hover{color:var(--abyss)}
+nav .btn{color:var(--on-kelp);padding:9px 16px;font-size:14px}
+@media(max-width:720px){nav a:not(.btn){display:none}}
+
+/* Real logo (shown only when assets/logo.png exists, see js/logo.js) */
+.brand-logo{width:30px;height:30px;object-fit:contain}
+footer .brand-logo{width:24px;height:24px}
+@media (prefers-color-scheme:dark){.brand-logo{filter:invert(1)}} /* black logo -> white on dark mode */

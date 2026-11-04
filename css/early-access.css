@@ -1,0 +1,9 @@
+/* ---------- Early access band ---------- */
+.band{background:var(--band-bg);color:var(--band-ink);border-top:0}
+.band h2{font-size:clamp(32px,4.5vw,52px);max-width:14em;margin-bottom:16px}
+.band p.lead{color:color-mix(in srgb,var(--band-ink) 72%,transparent);max-width:34em;margin-bottom:30px}
+.band form.join input{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.2);color:var(--band-ink)}
+.band form.join input::placeholder{color:color-mix(in srgb,var(--band-ink) 55%,transparent)}
+.band .btn{background:var(--saffron);color:#2A1C00}
+.band .btn:hover{background:#F2B65A}
+.band .note{color:color-mix(in srgb,var(--band-ink) 65%,transparent)}
