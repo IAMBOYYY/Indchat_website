@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>indchat – One project. Every AI you use.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/workspace.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/early-access.css">
+<link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+
+<!-- Logo mark: head = the project, eight arms = the AIs and tools connected to it -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 64 64">
+    <path fill="currentColor" d="M32 3c-10 0-14 10-12 18 1.5 6 4 9 4 13h16c0-4 2.5-7 4-13C46 13 42 3 32 3z"/>
+    <g id="arms" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round">
+      <path d="M24 34c-6 6-16 2-16-6 0-4 4-5 5-2"/>
+      <path d="M26 36c-4 10-14 10-15 18 0 4 5 4 5 1"/>
+      <path d="M28.5 37c-2 8-7 12-6 19 1 4 5 3 4 0"/>
+      <path d="M30.5 38c-1 8 1 14-1 21"/>
+    </g>
+    <use href="#arms" transform="translate(64 0) scale(-1 1)"/>
+  </symbol>
+</svg>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="indchat home"><svg><use href="#mark"/></svg>indchat</a>
+    <nav>
+      <a href="#problem">Why</a>
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a class="btn" href="#early-access">Get early access</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Stop re-explaining your project to every AI.</h1>
+      <p class="lead">indchat is one shared project that Claude, ChatGPT and Gemini all read from and write to over MCP. Your notes, files and decisions stay put when you switch tools.</p>
+      <form class="join" data-join>
+        <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
+        <button class="btn" type="submit">Request early access</button>
+      </form>
+      <p class="note" aria-live="polite">We’ll email you when your invite is ready.</p>
+    </div>
+
+    <svg class="diagram" viewBox="0 0 480 410" role="img" aria-label="One project in the center connected to eight AI models and tools">
+      <path class="head" d="M240 14c-50 0-72 50-60 92 8 28 20 44 20 66h80c0-22 12-38 20-66 12-42-10-92-60-92z"/>
+      <g>
+        <path class="arm" pathLength="1" style="--i:0" d="M202 172C200 205 160 232 126 232"/>
+        <path class="arm" pathLength="1" style="--i:1" d="M214 172C214 230 150 280 126 280"/>
+        <path class="arm" pathLength="1" style="--i:2" d="M226 172C226 250 140 328 126 328"/>
+        <path class="arm" pathLength="1" style="--i:3" d="M238 172C238 270 150 376 126 376"/>
+        <path class="arm" pathLength="1" style="--i:4" d="M278 172C280 205 320 232 354 232"/>
+        <path class="arm" pathLength="1" style="--i:5" d="M266 172C266 230 330 280 354 280"/>
+        <path class="arm" pathLength="1" style="--i:6" d="M254 172C254 250 340 328 354 328"/>
+        <path class="arm" pathLength="1" style="--i:7" d="M242 172C242 270 330 376 354 376"/>
+      </g>
+      <g class="end" style="--i:0"><rect class="pill" x="8" y="215" width="118" height="34" rx="17"/><circle class="dot" cx="26" cy="232" r="4"/><text x="40" y="237">Claude</text></g>
+      <g class="end" style="--i:1"><rect class="pill" x="8" y="263" width="118" height="34" rx="17"/><circle class="dot" cx="26" cy="280" r="4"/><text x="40" y="285">ChatGPT</text></g>
+      <g class="end" style="--i:2"><rect class="pill" x="8" y="311" width="118" height="34" rx="17"/><circle class="dot" cx="26" cy="328" r="4"/><text x="40" y="333">Gemini</text></g>
+      <g class="end" style="--i:3"><rect class="pill" x="8" y="359" width="118" height="34" rx="17"/><circle class="dot" cx="26" cy="376" r="4"/><text x="40" y="381">Perplexity</text></g>
+      <g class="end" style="--i:4"><rect class="pill" x="354" y="215" width="118" height="34" rx="17"/><circle class="dot" cx="372" cy="232" r="4"/><text x="386" y="237">Cursor</text></g>
+      <g class="end" style="--i:5"><rect class="pill" x="354" y="263" width="118" height="34" rx="17"/><circle class="dot" cx="372" cy="280" r="4"/><text x="386" y="285">Files</text></g>
+      <g class="end" style="--i:6"><rect class="pill" x="354" y="311" width="118" height="34" rx="17"/><circle class="dot" cx="372" cy="328" r="4"/><text x="386" y="333">Notes</text></g>
+      <g class="end" style="--i:7"><rect class="pill" x="354" y="359" width="118" height="34" rx="17"/><circle class="dot" cx="372" cy="376" r="4"/><text x="386" y="381">Your MCP</text></g>
+    </svg>
+  </div>
+</div>
+
+<div class="preview">
+  <div class="wrap">
+    <div class="ws">
+      <div class="ws-top">
+        <strong>Launch plan</strong>
+        <div class="models"><span>Claude</span><span>ChatGPT</span><span>Gemini</span></div>
+      </div>
+      <div class="ws-body">
+        <div class="files">
+          <p>Files in this project</p>
+          <ul>
+            <li class="on">launch-plan.md</li>
+            <li>research-notes.md</li>
+            <li>decisions.md</li>
+            <li>waitlist-email.md</li>
+          </ul>
+        </div>
+        <div class="feed">
+          <div class="ev"><div class="av cl">Cl</div><div><b>Claude</b> edited research-notes.md<small>Added four competitor findings · 2 min ago</small></div></div>
+          <div class="ev"><div class="av gp">GP</div><div><b>ChatGPT</b> added a task<small>Draft the waitlist email · 18 min ago</small></div></div>
+          <div class="ev"><div class="av ge">Ge</div><div><b>Gemini</b> suggested a change to launch-plan.md
+            <small>Move the public launch to the second week · waiting for you</small>
+            <div class="acts"><button data-act="Approved">Approve</button><button data-act="Reverted">Revert</button></div></div></div>
+          <div class="ev"><div class="av me">You</div><div><b>You</b> approved version 14<small>Yesterday</small></div></div>
+        </div>
+      </div>
+    </div>
+    <p class="cap">An illustration of a project. The product is in development.</p>
+  </div>
+</div>
+
+<section id="problem">
+  <div class="wrap split">
+    <h2>Every new chat starts from zero.</h2>
+    <div class="rows">
+      <div><h3>You paste the same background again and again</h3><p>The brief, the constraints, what you already decided. Every new chat gets the same wall of text.</p></div>
+      <div><h3>Good answers get stranded</h3><p>The best draft is somewhere in a chat from three weeks ago. Nobody is going to scroll back and find it.</p></div>
+      <div><h3>Two models, two versions of the truth</h3><p>Claude plans one thing, ChatGPT works from another, and you become the sync layer between them.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap split">
+    <h2>Set it up once. Use it from anywhere.</h2>
+    <ol class="steps">
+      <li><h3>Create a project</h3><p>Add the notes and files that describe what you’re working on.</p></li>
+      <li><h3>Connect your AIs</h3><p>Paste one MCP server entry into each tool you use. That’s the whole setup.</p>
+<pre>{
+  "mcpServers": {
+    "indchat": {
+      "url": "<i>https://your-workspace.indchat.com/mcp</i>"
+    }
+  }
+}</pre></li>
+      <li><h3>Work in whichever one fits</h3><p>Every model sees the same project and saves back to it, with its name on the change.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap split">
+    <h2>You stay in charge of what the AIs write.</h2>
+    <div class="rows">
+      <div><h3>Every change has an author</h3><p>See which model wrote what, and when. Nothing appears in your project without a name on it.</p></div>
+      <div><h3>Version history</h3><p>Each save is a version. Go back to any earlier state of a file or the whole project.</p></div>
+      <div><h3>Approve or revert</h3><p>Review a model’s edit before it becomes the current version, or undo it after the fact.</p></div>
+      <div><h3>Bring any MCP-capable tool</h3><p>indchat speaks the open protocol, so it isn’t tied to one vendor’s app.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="founder">
+  <div class="wrap">
+    <blockquote>“I kept pasting the same project background into Claude, then ChatGPT, then Gemini. I wanted the project to live in one place and the AIs to come to it.”</blockquote>
+    <p>Founder, indchat</p>
+  </div>
+</section>
+
+<section class="band" id="early-access">
+  <div class="wrap">
+    <h2>Get in before the doors open.</h2>
+    <p class="lead">indchat isn’t launched yet. Leave your email and we’ll send an invite as early-access spots open up.</p>
+    <form class="join" data-join>
+      <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
+      <button class="btn" type="submit">Request early access</button>
+    </form>
+    <p class="note" aria-live="polite">One email when your invite is ready. Nothing else.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><svg><use href="#mark"/></svg>indchat</a>
+    <span>© 2026 indchat</span>
+    <ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Contact</a></li></ul>
+  </div>
+</footer>
+
+<script src="js/logo.js" defer></script>
+<script src="js/waitlist.js" defer></script>
+<script src="js/workspace-demo.js" defer></script>
+</body>
+</html>
