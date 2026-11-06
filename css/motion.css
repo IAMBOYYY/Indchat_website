@@ -1,0 +1,28 @@
+/* ---------- Motion (all of it switched off for reduced-motion users) ---------- */
+:root{--ease:cubic-bezier(.22,.8,.24,1)}
+.btn{position:relative;overflow:hidden;transition:background .15s,transform .15s}
+.btn:active{transform:scale(.97)}
+.ws{position:relative}
+.ws::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--kelp) 9%,transparent),transparent 60%)}
+.ws:hover::before{opacity:1}
+.tick circle,.tick path{stroke-dasharray:1}
+@media(prefers-reduced-motion:no-preference){
+  .btn::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.3) 50%,transparent 70%);
+    transform:translateX(-120%);transition:transform .6s}
+  .btn:hover::after{transform:translateX(120%)}
+  .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+  .js .reveal.in{opacity:1;transform:none}
+  .rows>div{transition:padding-left .3s var(--ease)}
+  .rows>div:hover{padding-left:12px}
+  .hero-logo{opacity:0;animation:rise 1s var(--ease) .1s forwards}
+  .line{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.2s var(--ease) forwards;animation-delay:calc(var(--i)*.12s + .6s)}
+  .anchor,.pillg{opacity:0;animation:fade .6s ease forwards;animation-delay:calc(var(--i)*.12s + 1s)}
+  .ring{transform-box:fill-box;transform-origin:center;animation:ping 2.6s ease-out infinite;animation-delay:calc(var(--i)*.45s + 2s)}
+  .tick circle{stroke-dashoffset:1;animation:draw .7s var(--ease) .1s forwards}
+  .tick path{stroke-dashoffset:1;animation:draw .5s var(--ease) .7s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes fade{to{opacity:1}}
+  @keyframes rise{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+  @keyframes ping{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(3.2)}}
+}

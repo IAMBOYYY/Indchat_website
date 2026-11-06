@@ -4,6 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>indchat – One project. Every AI you use.</title>
+<meta name="description" content="indchat is one shared project that Claude, ChatGPT and Gemini all read from and write to over MCP. Request early access.">
+<meta property="og:title" content="indchat – One project. Every AI you use.">
+<meta property="og:description" content="indchat is one shared project that Claude, ChatGPT and Gemini all read from and write to over MCP. Request early access.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#EDF1EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1819" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -15,36 +23,25 @@
 <link rel="stylesheet" href="css/sections.css">
 <link rel="stylesheet" href="css/early-access.css">
 <link rel="stylesheet" href="css/footer.css">
-
+<link rel="stylesheet" href="css/motion.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-
-<!-- Logo mark: head = the project, eight arms = the AIs and tools connected to it -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="mark" viewBox="0 0 64 64">
-    <path fill="currentColor" d="M32 3c-10 0-14 10-12 18 1.5 6 4 9 4 13h16c0-4 2.5-7 4-13C46 13 42 3 32 3z"/>
-    <g id="arms" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round">
-      <path d="M24 34c-6 6-16 2-16-6 0-4 4-5 5-2"/>
-      <path d="M26 36c-4 10-14 10-15 18 0 4 5 4 5 1"/>
-      <path d="M28.5 37c-2 8-7 12-6 19 1 4 5 3 4 0"/>
-      <path d="M30.5 38c-1 8 1 14-1 21"/>
-    </g>
-    <use href="#arms" transform="translate(64 0) scale(-1 1)"/>
-  </symbol>
-</svg>
-
+<div class="progress" aria-hidden="true"></div>
 <header>
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="indchat home"><svg><use href="#mark"/></svg>indchat</a>
-    <nav>
-      <a href="#problem">Why</a>
-      <a href="#how">How it works</a>
-      <a href="#features">Features</a>
-      <a class="btn" href="#early-access">Get early access</a>
+    <a class="brand" href="index.html" aria-label="indchat home"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-light.png"><img class="brand-logo" src="assets/logo.png" alt="" width="30" height="30"></picture>indchat</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <nav id="menu">
+      <a href="index.html#problem">Why</a>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#features">Features</a>
+      <a class="btn" href="index.html#early-access">Get early access</a>
     </nav>
   </div>
 </header>
-
 <main id="top">
 <div class="hero">
   <div class="wrap">
@@ -52,32 +49,17 @@
       <h1>Stop re-explaining your project to every AI.</h1>
       <p class="lead">indchat is one shared project that Claude, ChatGPT and Gemini all read from and write to over MCP. Your notes, files and decisions stay put when you switch tools.</p>
       <form class="join" data-join>
-        <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" autocomplete="email" required>
         <button class="btn" type="submit">Request early access</button>
       </form>
       <p class="note" aria-live="polite">We’ll email you when your invite is ready.</p>
     </div>
-
-    <svg class="diagram" viewBox="0 0 480 410" role="img" aria-label="One project in the center connected to eight AI models and tools">
-      <path class="head" d="M240 14c-50 0-72 50-60 92 8 28 20 44 20 66h80c0-22 12-38 20-66 12-42-10-92-60-92z"/>
-      <g>
-        <path class="arm" pathLength="1" style="--i:0" d="M202 172C200 205 160 232 126 232"/>
-        <path class="arm" pathLength="1" style="--i:1" d="M214 172C214 230 150 280 126 280"/>
-        <path class="arm" pathLength="1" style="--i:2" d="M226 172C226 250 140 328 126 328"/>
-        <path class="arm" pathLength="1" style="--i:3" d="M238 172C238 270 150 376 126 376"/>
-        <path class="arm" pathLength="1" style="--i:4" d="M278 172C280 205 320 232 354 232"/>
-        <path class="arm" pathLength="1" style="--i:5" d="M266 172C266 230 330 280 354 280"/>
-        <path class="arm" pathLength="1" style="--i:6" d="M254 172C254 250 340 328 354 328"/>
-        <path class="arm" pathLength="1" style="--i:7" d="M242 172C242 270 330 376 354 376"/>
-      </g>
-      <g class="end" style="--i:0"><rect class="pill" x="8" y="215" width="118" height="34" rx="17"/><circle class="dot" cx="26" cy="232" r="4"/><text x="40" y="237">Claude</text></g>
-      <g class="end" style="--i:1"><rect class="pill" x="8" y="263" width="118" height="34" rx="17"/><circle class="dot" cx="26" cy="280" r="4"/><text x="40" y="285">ChatGPT</text></g>
-      <g class="end" style="--i:2"><rect class="pill" x="8" y="311" width="118" height="34" rx="17"/><circle class="dot" cx="26" cy="328" r="4"/><text x="40" y="333">Gemini</text></g>
-      <g class="end" style="--i:3"><rect class="pill" x="8" y="359" width="118" height="34" rx="17"/><circle class="dot" cx="26" cy="376" r="4"/><text x="40" y="381">Perplexity</text></g>
-      <g class="end" style="--i:4"><rect class="pill" x="354" y="215" width="118" height="34" rx="17"/><circle class="dot" cx="372" cy="232" r="4"/><text x="386" y="237">Cursor</text></g>
-      <g class="end" style="--i:5"><rect class="pill" x="354" y="263" width="118" height="34" rx="17"/><circle class="dot" cx="372" cy="280" r="4"/><text x="386" y="285">Files</text></g>
-      <g class="end" style="--i:6"><rect class="pill" x="354" y="311" width="118" height="34" rx="17"/><circle class="dot" cx="372" cy="328" r="4"/><text x="386" y="333">Notes</text></g>
-      <g class="end" style="--i:7"><rect class="pill" x="354" y="359" width="118" height="34" rx="17"/><circle class="dot" cx="372" cy="376" r="4"/><text x="386" y="381">Your MCP</text></g>
+    <svg class="diagram" viewBox="0 120 1700 960" role="img" aria-label="The indchat octopus, with its arms connected to Claude, ChatGPT, Gemini, Perplexity, Cursor and your own MCP server">
+      <defs><radialGradient id="glow"><stop offset="0" style="stop-color:var(--kelp);stop-opacity:.16"/><stop offset="1" style="stop-color:var(--kelp);stop-opacity:0"/></radialGradient></defs>
+      <circle cx="850" cy="580" r="500" fill="url(#glow)"/>
+      <g class="hero-logo"><image class="lg-light" href="assets/hero-mark.png" x="223" y="0" width="1254" height="1254"/><image class="lg-dark" href="assets/hero-mark-light.png" x="223" y="0" width="1254" height="1254"/></g>
+      <path class="line" pathLength="1" style="--i:0" d="M521 640C450 640 440 520 370 520"/><path class="line" pathLength="1" style="--i:1" d="M525 860C450 860 440 760 370 760"/><path class="line" pathLength="1" style="--i:2" d="M689 940C560 940 470 1000 370 1000"/><path class="line" pathLength="1" style="--i:3" d="M1193 640C1260 640 1260 520 1330 520"/><path class="line" pathLength="1" style="--i:4" d="M1188 860C1260 860 1260 760 1330 760"/><path class="line" pathLength="1" style="--i:5" d="M1028 935C1150 935 1230 1000 1330 1000"/><g class="anchor" style="--i:0"><circle class="ring" style="--i:0" cx="521" cy="640" r="10"/><circle class="dot" cx="521" cy="640" r="10"/></g><g class="pillg" style="--i:0"><rect class="pill" x="10" y="472" width="360" height="96" rx="48"/><circle class="dot" cx="54" cy="520" r="9"/><text x="88" y="536">Claude</text></g><g class="anchor" style="--i:1"><circle class="ring" style="--i:1" cx="525" cy="860" r="10"/><circle class="dot" cx="525" cy="860" r="10"/></g><g class="pillg" style="--i:1"><rect class="pill" x="10" y="712" width="360" height="96" rx="48"/><circle class="dot" cx="54" cy="760" r="9"/><text x="88" y="776">ChatGPT</text></g><g class="anchor" style="--i:2"><circle class="ring" style="--i:2" cx="689" cy="940" r="10"/><circle class="dot" cx="689" cy="940" r="10"/></g><g class="pillg" style="--i:2"><rect class="pill" x="10" y="952" width="360" height="96" rx="48"/><circle class="dot" cx="54" cy="1000" r="9"/><text x="88" y="1016">Gemini</text></g><g class="anchor" style="--i:3"><circle class="ring" style="--i:3" cx="1193" cy="640" r="10"/><circle class="dot" cx="1193" cy="640" r="10"/></g><g class="pillg" style="--i:3"><rect class="pill" x="1330" y="472" width="360" height="96" rx="48"/><circle class="dot" cx="1374" cy="520" r="9"/><text x="1408" y="536">Perplexity</text></g><g class="anchor" style="--i:4"><circle class="ring" style="--i:4" cx="1188" cy="860" r="10"/><circle class="dot" cx="1188" cy="860" r="10"/></g><g class="pillg" style="--i:4"><rect class="pill" x="1330" y="712" width="360" height="96" rx="48"/><circle class="dot" cx="1374" cy="760" r="9"/><text x="1408" y="776">Cursor</text></g><g class="anchor" style="--i:5"><circle class="ring" style="--i:5" cx="1028" cy="935" r="10"/><circle class="dot" cx="1028" cy="935" r="10"/></g><g class="pillg" style="--i:5"><rect class="pill" x="1330" y="952" width="360" height="96" rx="48"/><circle class="dot" cx="1374" cy="1000" r="9"/><text x="1408" y="1016">Your MCP</text></g>
     </svg>
   </div>
 </div>
@@ -166,6 +148,7 @@
     <h2>Get in before the doors open.</h2>
     <p class="lead">indchat isn’t launched yet. Leave your email and we’ll send an invite as early-access spots open up.</p>
     <form class="join" data-join>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
       <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
       <button class="btn" type="submit">Request early access</button>
     </form>
@@ -173,16 +156,15 @@
   </div>
 </section>
 </main>
-
 <footer>
   <div class="wrap">
-    <a class="brand" href="#top"><svg><use href="#mark"/></svg>indchat</a>
+    <a class="brand" href="index.html"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/logo-light.png"><img class="brand-logo" src="assets/logo.png" alt="" width="24" height="24"></picture>indchat</a>
     <span>© 2026 indchat</span>
-    <ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Contact</a></li></ul>
+    <ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="contact.html">Contact</a></li></ul>
   </div>
 </footer>
-
-<script src="js/logo.js" defer></script>
+<script src="js/config.js" defer></script>
+<script src="js/site.js" defer></script>
 <script src="js/waitlist.js" defer></script>
 <script src="js/workspace-demo.js" defer></script>
 </body>
